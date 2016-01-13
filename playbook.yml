@@ -11,7 +11,7 @@
         apt:
           update_cache=yes
           cache_valid_time=7200
-          #upgrade=yes # Uncomment this to force full upgrade!
+          upgrade=yes # Uncomment this to force full upgrade!
       - name: Install stuff from Aptitude
         apt: name={{ item }} state=installed
         with_items:
@@ -30,4 +30,4 @@
       - { role: python, sudo: false }
       - { role: jedi-vim, sudo: false }
       - { role: luigi, sudo: fasle }
-      #- { role: youcompleteme, sudo: false } # Comment out this to save time!!
+      - { role: youcompleteme, sudo: false } # Comment out this to save time!!

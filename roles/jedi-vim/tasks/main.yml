@@ -4,6 +4,7 @@
     repo=https://github.com/davidhalter/jedi-vim.git
     dest={{ home }}/.vim/bundle/jedi-vim
     version=HEAD
+    force=yes
     recursive=no
 - name: Check out jedi manually into jedi-vim/jedi
   git:
